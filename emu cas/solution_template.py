@@ -4,6 +4,7 @@ import json
 
 def flip_coin(cookie):
     data = base64.b64decode(cookie)
+    # yes the following 3 lines I used AI becuaase i do not know json that well
     json_part = data.split(b'}')[0] + b'}'
     obj = json.loads(json_part.decode())
 
