@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>The Emu Apothecary</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/css/main.css" />
+    </head>
+
+    <body>
+        <section>
+            <h1 style="color: rgb(0, 255, 238);">The Emu Apothecary</h1>
+            <h2 style="color: rgb(0, 255, 98);">Brew your own potion recipe!</h2>
+            <p style="color: rgb(0, 255, 255);">Welcome fellow bird friends to my potion building website!</p>
+            <p style="color: rgb(0, 255, 34);">Make sure you DO NOT POLLUTE THE RECIPE AND SEND IT TO ME!</p>
+            <p style="color: rgb(0, 255, 234);">Otherwise I will peck your kneecaps.</p>
+            <hr/>
+            <h2 style="color: rgb(0, 255, 238);">Current Recipe</h2>
+            <table>
+                <tr>
+                    <th>Ingredient Name</th>
+                    <th>Amount</th>
+                    <th>Type</th>
+                </tr>
+                <% for( const ingredient in ingredients ) {%>
+                    <tr>
+                        <td><%= ingredient %></td>
+                        <td><%= ingredients[ingredient].value ?? "some amount" %></td>
+                        <td><%= ingredients[ingredient].type ?? "some measurement" %></td>
+                    </tr>
+                <% } %>
+            </table>
+            <hr/>
+            <h2 style="color: rgb(0, 255, 238);">Add Ingredient</h2>
+            <input id="ingredientName" type="text" placeholder="Ingredient Name"/>
+            <input id="ingredientAmount" type="text" placeholder="Amount"/>
+            <input id="ingredientType" type="text" placeholder="Type of Amount"/>
+            <input id="addIngredient" type="submit" value="Add Ingredient" />
+            <br/>
+            <br/>
+            <input id="clearIngredients" type="submit" style="background-color: rgba(120, 0, 0, 0.574);" value="Clear Ingredients" />
+        </section>
+
+        <div id="particles" class="particles"></div>
+        <script src="/js/jquery-3.7.1.min.js"></script>
+        <script src="/js/particles.min.js"></script>
+        <script src="/js/main.js"></script>
+    </body>
+</html>

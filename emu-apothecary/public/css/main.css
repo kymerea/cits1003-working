@@ -1,0 +1,95 @@
+h1, h2, h3, h4, h5, h6, p, input, a, th, td, li {
+    font-family: 'Press Start 2P', regular;
+    color: rgb(0, 255, 47);
+}
+
+h1 {
+    font-size:42px;
+}
+
+input {
+    border-color: rgba(0, 255, 98, 0);
+    background-color: rgba(71, 71, 71, 0.588);
+    color: rgb(255, 255, 255);
+    width: 60%;
+    border-radius: 2px;
+    text-align: center;
+    margin: 2px;
+}
+
+table, th, td {
+    border: 1px solid;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    background-color: #000000;
+}
+
+.filled {
+    background-color: rgb(255, 0, 208);
+}
+
+input[type="text"] {
+    border-color: rgba(0, 255, 98, 0);
+    background-color: rgba(0, 109, 49, 0.588);
+    color: rgb(251, 251, 251);
+    font-size: medium;
+}
+
+textarea {
+    font-family: 'Press Start 2P', regular;
+    border-color: rgba(0, 255, 98, 0);
+    background-color: rgba(0, 109, 49, 0.588);
+    color: rgb(251, 251, 251);
+    font-size: medium;
+}
+
+input[type="password"] {
+    border-color: rgba(0, 255, 98, 0);
+    background-color: rgba(0, 73, 109, 0.588);
+    color: rgb(251, 251, 251);
+    font-size: medium;
+}
+
+input[type="submit"] {
+    margin-top: 5px;
+    font-size: medium;
+    border-color: rgba(0, 255, 98, 0);
+    background-color: rgba(0, 91, 109, 0.588);
+    color: rgb(251, 251, 251);
+}
+
+#submit {
+    padding: 5px;
+}
+
+#grid-item {
+    text-align: center;
+}
+
+section {
+    position: fixed;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0%);
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    display: none;
+    overflow-wrap: break-word;
+}
+
+.particles {
+    background: transparent;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    z-index: -1;
+}
