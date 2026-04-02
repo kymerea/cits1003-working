@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeatheredForum - {{ post['title'] }}</title>
+    <link rel="stylesheet" href="/static?filename=css/styles.css" />
+</head>
+<body>
+    <h1>{{ post['title'] }}</h1>
+
+        {% for reply in post['replies'] %}
+            <p><i>From: {{ reply['user'] }}</i></p>
+            <p>{{ reply['content'] }}</p>
+            {% if 'image' in reply %}
+                <img src="/static?filename=images/{{ reply['image'] }}" />
+            {% endif %}
+            <hr />
+        {% endfor %}
+
+        <a href="/forum">Back to other posts</a>
+</body>
+</html>

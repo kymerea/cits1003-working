@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeatheredForum</title>
+    <link rel="stylesheet" href="/static?filename=css/styles.css" />
+</head>
+<body>
+    <h1>Welcome to BeakMaster's Super Top Secret Forum</h1>
+    <div class="agent-welcome">
+        Welcome back, Agent {{ student_id }}.
+        Your access token: <code>{{ flag_part1 }}</code>
+    </div>
+    <br />
+    <p>You have broken into BeakMaster's super secret emu operations forum. Be careful not to let the emus know you're here — try not to leave any traces.</p>
+    <p><i>Btw please ignore the minimalistic web design... I haven't got around to making it very pretty yet.</i></p>
+
+    <hr />
+
+    <h3>Posts</h3>
+    <table>
+        <tr>
+            <th>Post</th>
+            <th>Created By</th>
+            <th>Total Replies</th>
+        </tr>
+        {% for post in posts %}
+            <tr>
+                <td><a href="/forum/{{ post['id'] }}">{{ post['title'] }}</a></td>
+                <td>{{ post['user'] }}</td>
+                <td>{{ post['replies_len'] }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

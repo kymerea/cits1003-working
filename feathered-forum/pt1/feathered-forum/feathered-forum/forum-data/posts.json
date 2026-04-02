@@ -1,0 +1,37 @@
+{
+    "posts": [
+        {
+            "title": "Actual Posts on the Challenges Server",
+            "user": "BeakMaster",
+            "replies": [
+                {
+                    "content": "This is just a fake post, the real posts are on the hosted challenge server",
+                    "user": "BeakMaster"
+                }
+            ]
+        },
+        {
+            "title": "What on earth is a path traversal???",
+            "user": "BeakMaster",
+            "replies": [
+                {
+                    "image": "emu-hacker0.jpg",
+                    "content": "Uuuuuhhhh Agent {student_id} sent me this email saying this site has a path traversal vulnerability??? What on earth is that??? Y is this person sending me this {flag_part2} thing?",
+                    "user": "BeakMaster"
+                },
+                {
+                    "content": "I asked ChatGPT and it said this, \"Path traversal is a web security vulnerability where attackers exploit insufficient input validation to navigate to files outside of the web server's intended directory, potentially accessing sensitive information or executing arbitrary code. Prevention involves robust input validation and restricting file access to authorized directories.\"",
+                    "user": "OstrichOutlaw"
+                },
+                {
+                    "content": "So you can just read other files??? How is that bad???",
+                    "user": "H4ck3r3mu123"
+                },
+                {
+                    "content": "Yeah idk, I am just going to respond to that email and say it is a feature and ignore it.",
+                    "user": "BeakMaster"
+                }
+            ]
+        }
+    ]
+}
