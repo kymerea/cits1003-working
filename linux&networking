@@ -1,3 +1,10 @@
 echo "student_id" | nc ip port
 
 git clone http://ip:port/directory
+
+ssh -p port user@ip "command"
+
+ssh -p 2022 emu001@152.67.97.52 "bash -i"
+
+sudo -u mr_x git help -a
+!sh
