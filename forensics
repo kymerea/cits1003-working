@@ -1,0 +1,5 @@
+exiftool
+
+steghide extract -sf filename -p password
+
+strings pam_unix.so | less
